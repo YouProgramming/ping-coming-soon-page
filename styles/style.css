@@ -1,0 +1,117 @@
+:root{
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+    --Font-size: 20px
+}
+*{
+    font-family: "Libre Franklin", sans-serif;
+}
+.page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 80%;
+    gap: 30px;
+    /* margin-top: 150px; */
+    /* padding: 200px 0 105px; */
+    /* padding-top: 60px;
+    padding-bottom: 60px; */
+}
+.text-container{
+    text-align: center;
+}
+.text-container h1{
+    font-weight: 300;
+    color: var(--Gray);
+}
+.soon{
+    font-weight: 900;
+    color: var(--Very-Dark-Blue);
+}
+form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+form .email{
+    width: 70%;
+    height: 30px;
+    border-radius: 17px;
+    padding-left: 10px;
+    outline: 1px solid var(--Gray);
+    border: none;
+    margin-right: 10px;
+}
+form .submit{
+    background-color: var(--Blue);
+    color: white;
+    border: none;
+    width: 26%;
+    height: 100%;
+    border-radius: 17px;
+    cursor: pointer;
+    padding-left: 5px;
+}
+.image-container{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+}
+.social-icons-and-copyright{
+    text-align: center;
+}
+.social-icons-and-copyright span{
+    color: var(--Gray);
+}
+.icons i{
+    margin: 5px 5px 20px 5px;
+    cursor: pointer;
+}
+.error-mesage{
+    color: var(--Light-Red);
+    position: absolute;
+    left: 20px;
+    top: 37px;
+    font-size: 13px;
+}
+
+@media (max-width:375px ) {
+    .sub-container{
+        width: 100%;
+    }
+    form{
+        flex-direction: column;
+    }
+    .email{
+        margin-bottom: 17px;
+    }
+    form .submit, .email{
+        width: 80%;
+        height: 40px;
+    }
+    .error-mesage{
+        top: 20px;
+        left: 49px;
+        font-size: 10px;
+    }
+}
